@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    width : 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__img {
+    width : 70%;
+    height : 70%;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.right {
+    width : 54%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right__bio {
+    width: 80%;
+    height: 15%;
+    font: normal 2.5vw NanumSquare;
+    color: #535353
+}
+
+.right__bio--name {
+    font: bold 4vw Beirut;
+    color: #000000;
+}
+
+.right__bio--detail{
+    height: 10%;
+}
+
+.under {
+    border-top: 5px solid orange;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.under__social {
+    width: 45%;
+    height: 40%;
+}
+
+.under__social a {
+    margin-left: 0.5em;
+    font: normal 2vw Arial;
+    color: black;
+    text-decoration:none
+}
+
+.under__social--color {
+    color: #535353;
+}
