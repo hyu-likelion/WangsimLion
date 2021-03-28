@@ -1,0 +1,41 @@
+body{
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    color : black
+}
+#button{
+    position: absolute;
+    left: 0px;
+}
+.container{
+    border: solid 2px pink;
+    border-radius: 20px;
+    width: 50%;
+}
+.col-sm-5{
+    justify-content: center;
+}
+.myImage{
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    border: solid 2px pink;
+}
+.col-sm-7{
+    flex-direction: column;
+    justify-content: center;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+#row1{
+    padding: 10px 0px;
+    border-bottom: solid 2px pink;
+}
+#row2{
+    padding: 10px 0px;
+}

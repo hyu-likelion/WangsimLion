@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>심채영 명함</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="mycard.css" >
+    </head>
+    <body>
+        <input type="button" class="btn btn-warning" value="다크 모드" id="button"></input>
+        <div class="container">
+            <div class="row" id="row1">
+                <div class="col-sm-5 d-flex">
+                    <img src="images/arongimage.jpg" alt="arongimage" class="myImage">
+                </div>
+                <div class="col-sm-7 d-flex">
+                    <h3>SHIM CHAE YOUNG</h3>
+                    <h5>Hanyang Uni / LikeLion 9th</h5>
+                    <h5>Tech Stack : Java, Spring, JavaScript</h5>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="col-sm-6">
+                    <img class="icon" id="email" src="images/email.png" alt="email">
+                    <span>cathyshim222@gmail.com</span>
+                </div>
+                <div class="col-sm-6">
+                    <img class="icon" id="git" src="images/git.svg" alt="git">
+                    <a href="https://github.com/chaengs">https://github.com/chaengs</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img class="icon" id="phone" src="images/phone.png" alt="phone">
+                    <span>010 - 5580 - 6862</span>
+                    
+                </div>
+                <div class="col-sm-6">
+                    <img class="icon" src="images/instagram.svg" alt="instagram">
+                    <a href="https://www.instagram.com/chaengss">@chaengss</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('#button').click(function(){
+            if($(this).val() == '다크 모드'){
+                $(this).val('라이트 모드');
+                $('body').css('background-color','black');
+                $('#email').attr('src','images/email_dark.png');
+                $('#git').attr('src','images/git_dark.svg');
+                $('#phone').attr('src','images/phone_dark.png');
+                $('.container').css('color','white');
+                $('a').css('color','white');
+            }else{
+                $(this).val('다크 모드');
+                $('body').css('background-color','white');
+                $('#email').attr('src','images/email.png');
+                $('#git').attr('src','images/git.svg');
+                $('#phone').attr('src','images/phone.png');
+                $('.container').css('color','black');
+                $('a').css('color','black');
+            }
+        });
+    </script>
+</html>
