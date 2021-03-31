@@ -296,3 +296,19 @@ justify-content: space-around; - flex-direction 기준, 고르게 정렬
 2. Fontawesome - https://uxgjs.tistory.com/186
 3. GitHub 사용법 - https://velog.io/@jaeeunxo1/Gitbasic
 4. flex를 활용한 10가지 레이아웃 - https://d2.naver.com/helloworld/8540176
+
+- [기본 리눅스 명령어](https://itholic.github.io/linux-basic-command/)
+- [리눅스 현재 작업 위치, 작업 위치 이동하기](https://webdir.tistory.com/144)
+- [그림으로 보는 Git](https://velog.io/@choiiis/Git-Git-GitHub-GitHub-Desktop-%EC%A0%95%EB%A6%AC)
+- 간단한 깃 사용법
+
+  1. git clone [url]
+  2. cd [폴더이름]
+  3. week0 폴더 생성 : mkdir week0
+  4. week0 폴더로 이동 : cd week0
+  5. 본인 이름 폴더 생성 : mkdir 김상효
+  6. html, css, image 파일 추가
+  7. .git이 존재하는 상위 폴더로 이동 : 리눅스 작업 위치 이동 관련 링크 참조
+  8. git add .
+  9. git commit -m "message"
+  10. git push
