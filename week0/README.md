@@ -300,9 +300,9 @@ justify-content: space-around; - flex-direction 기준, 고르게 정렬
 - [그림으로 보는 Git](https://velog.io/@choiiis/Git-Git-GitHub-GitHub-Desktop-%EC%A0%95%EB%A6%AC)
 - 간단한 깃 사용법
 
-  1. git clone [url]
+  1. git clone url
   2. git log
-  3. cd [폴더이름]
+  3. cd 폴더이름
   4. week0 폴더 생성 : mkdir week0
   5. week0 폴더로 이동 : cd week0
   6. 본인 이름 폴더 생성 : mkdir 김상효
