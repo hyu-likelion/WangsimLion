@@ -1,0 +1,14 @@
+<h1>당신이 입력한 텍스트는 {{total}} 단어로 구성되어 있습니다.</h1>
+
+
+
+<h1>입력한 텍스트:</h1>
+{{ fulltext }}
+
+<h1>단어 카운트:</h1>
+{% for word, countTotal in dictionary %}
+{{ word }} - {{ countTotal }}
+<br>
+{% endfor %}
+
+<a href="{% url 'home' %}">다시하기</a>
