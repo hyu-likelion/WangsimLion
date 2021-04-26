@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count</title>
+</head>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<style>
+    #container {
+        width: 500px;
+        margin: 18% auto;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 4em;
+        font-weight: bold;
+        color: #ff9514;
+        font-family: 'Caveat', cursive;
+    }
+
+    #form_cover {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #form_title {
+        font-size: 1.5em;
+        color: #525252;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    input {
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #525252;
+        text-align: center;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #submit {
+        float: right;
+        margin-top: 10px;
+        background-color: #ff9514;
+        color: white;
+        font-family: 'Noto Sans KR', sans-serif;
+        border: none;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+<div id="container">
+    <div id="title">Word Count!</div>
+    <a href="{% url 'about' %}">About</a>
+    <div id="form_cover">
+        <div id="form_title">내용을 적어주세요.</div>
+    <form action="{% url 'count' %}">
+        <textarea cols='40' rows='10' name='fulltext'></textarea>
+        <br>
+        <input id='submit' type="submit" value='Count'>
+    </form>
+    </div>
+</div>
+<br>
+<br>
+<a href="{% url 'main' %}">계산기 쓰러가기</a>
+</body>
+</html>
