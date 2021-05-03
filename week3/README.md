@@ -2,7 +2,6 @@
 
 ## REST
 
-![REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/rest.png](REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/rest.png)
 
 ### REST : REpresentational State Transfer
 
@@ -29,15 +28,12 @@ State Transfer : 자원의 상태를 전송하는 방법
 
 ### API : Application Program Inteface
 
-![REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/Untitled.png](REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/Untitled.png)
-
 Request, Response로 오가는 구조화된 데이터
 
 서버와 클라이언트 사이의 메신저 , 데이터를 주고 받는 형식
 
 ### REST API
 
-![REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/Untitled%201.png](REST%20,%20REST%20API,%20RESTful%208ac0922dae8a4a10ba1feffb0a544fef/Untitled%201.png)
 
 REST 아키텍쳐 스타일을 따르는 API
 
