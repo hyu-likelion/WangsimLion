@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    
+    {% for post in blog_posts %}
+    <br>
+    <div class='container'>
+        <div class='container_body'>
+            <h4>{{post.title}}</h3>
+            <p>{{post.pub_date}}</p>
+            <p>{{post.summary}} <a href="{% url 'blog:detail' post.id %}">...more</a></p>
+        </div>
+        
+    </div>
+    {% endfor %}
+
+    {% if blog_posts.has_previous %}
+    <a href="?page=1">First</a>
+    <a href="?page={{blog_posts.previous_page_number}}">Previous</a>
+    {%endif%}
+
+    <span>{{blog_posts.number}}</span>
+    <span>of</span>
+    <span>{{blog_posts.paginator.num_pages}}</span>
+
+    {%if blog_posts.has_next%}
+    <a href="?page={{blog_posts.next_page_number}}">Next</a>
+    <a href="?page={{blog_posts.paginator.num_pages}}">Last</a>
+    {%endif%}
+    
+{% endblock %}

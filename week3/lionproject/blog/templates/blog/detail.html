@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<h1>{{post.title}}</h1>
+    <div>
+    작성 날짜 : {{post.pub_date}}
+    </div>
+    <br>
+    <p>{{post.body}}</p>
+    <a href="{% url 'blog:editpost' post.id %}">수정하기</a>
+    <a href="{% url 'blog:delete' post.id %}">삭제하기</a>
+    <a href="{% url 'blog:home' %}">메인으로</a>
+{% endblock %}

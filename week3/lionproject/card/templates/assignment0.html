@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정이의 명함</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="leftbox">
+            <img class="profile" src="{% static 'images/profile.jpg' %}">
+        </div>
+
+        <div class="rightbox">
+            <p class="bio-name">Yun Jeong</p>
+            <p class="bio">Hanyang Univ. / LikeLion 9th</p>
+            <p class="bio">Tech stack : C, C++, Java</p>
+            <p class="bio">Contact : joyuuuu1@gmail.com</p>
+        </div>
+        
+        <div class="bottombox">
+                <div class="content">
+                    <i class="fab fa-github-square fa-3x"></i>
+                    <a href="https://github.com/joy2256">https://github.com/joy2256</a>
+                </div>
+                <div class="content">
+                    <i class="fab fa-instagram-square fa-3x"></i>
+                    <a href="https://instagram.com/un.ng">https://instagram.com/un.ng</a>
+                </div>
+                <div class="content">
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                    <a id="facebook" href="https://www.facebook.com/profile.php?id=100011147408016">https://www.facebook.com/profile.php?id=100011147408016</a>
+                </div>
+                <div class="content">
+                    <i class="fas fa-pen-square fa-3x"></i>
+                    <a href="https://m.blog.naver.com/lovwmelooz">https://m.blog.naver.com/lovwmelooz</a>
+                </div>
+        </div>
+        
+    </div>
+</body>
+</html>
