@@ -1,0 +1,21 @@
+<h1>To do List</h1>
+
+{% for todos in to_dos.all %}
+<br>
+<div class="container">
+    <li>
+        {{todos.title}}
+        <a href="{% url 'edit' todos.id %}">수정하기</a>
+        <a href="{% url 'delete' todos.id %}">삭제하기</a>
+    </li>
+</div>
+{% endfor %}
+<br>
+<br>
+
+<div class="container">
+    <form action="{% url 'create' %}">
+        <input type='text' name='title'>
+        <input type='submit' value='추가하기'>
+    </form>
+</div>

@@ -1,0 +1,7 @@
+<h1>수정하기</h1>
+
+<form action="{%url 'update' to_dos.id %}" method="GET">
+    {%csrf_token%}
+    <b><input type="text" name="title" value="{{to_dos.title}}"></b>
+    <button type='submit'>submit</button>
+</form>
