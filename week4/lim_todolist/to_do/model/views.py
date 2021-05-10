@@ -10,7 +10,7 @@ def create(request):
     todos=to_do()
     todos.title = request.GET['title']
     todos.save()
-    return redirect('home', new_todos.id)
+    return redirect('home')
 
 def edit(request, todos_id):
     edit_todos=to_do.objects.get(id=todos_id)
